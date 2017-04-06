@@ -4,5 +4,3 @@ def trump_tweet():
     a = html.find('TweetTextSize TweetTextSize--large js-tweet-text tweet-text" lang="en" data-aria-label-part="0">')
     b = html.find('<', a + 96)
     return '@realDonaldTrump says : ' + html[a+96:b-1]
-
-print(trump_tweet())
