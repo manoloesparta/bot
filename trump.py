@@ -10,4 +10,3 @@ def trump_tweet():
     else:
         html = '>' + html[a + 2424:b] + '<'
         return string_cleaner(html)[:-1]
-print(trump_tweet())
