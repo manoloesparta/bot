@@ -9,4 +9,4 @@ def trump_tweet():
         return '@realDonaldTrump says : ' + html[a + 2424:b]
     else:
         html = '>' + html[a + 2424:b] + '<'
-        return string_cleaner(html)[:-1]
+        return '@realDonaldTrump says : ' + string_cleaner(html)[:-1]
