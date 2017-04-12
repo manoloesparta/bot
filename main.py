@@ -1,7 +1,8 @@
 import discord
 from discord.ext import commands
 import random
-import trump
+from trump import trump_tweet
+from i import i
 
 description = '''An example bot to showcase the discord.ext.commands extension
 module.
@@ -52,7 +53,12 @@ async def joined(member : discord.Member):
 @bot.command()
 async def trumped():
     '''Last Trump tweet (BETA)'''
-    await bot.say(trump.trump_tweet())
+    await bot.say(trump_tweet())
+
+@bot.command()
+async def fincin(string : str):
+    '''Change al vocals to i'''
+    await bot.say(i(string))
 
 @bot.group(pass_context=True)
 async def cool(ctx):
