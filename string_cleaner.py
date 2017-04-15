@@ -20,3 +20,7 @@ def string_cleaner(string):
     nuevo = ''.join(nuevo_2)
 
     return nuevo[1:-1]
+
+if __name__ == '__main__':
+    para = input()
+    print(string_cleaner('>' + para + '<'))

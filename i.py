@@ -6,3 +6,7 @@ def i(string):
 			lista[n] = 'i'
 
 	return ''.join(lista)
+
+if __name__ == '__main__':
+	entrada = input()
+	print(i(entrada))

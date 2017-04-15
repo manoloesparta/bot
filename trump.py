@@ -10,3 +10,6 @@ def trump_tweet():
     else:
         html = '>' + html[a + 2424:b] + '<'
         return '@realDonaldTrump says : ' + string_cleaner(html)[:-1]
+
+if __name__ = '__main__':
+    trump_tweet()
